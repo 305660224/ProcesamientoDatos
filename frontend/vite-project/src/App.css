@@ -1,0 +1,124 @@
+/* Estilos generales */
+body {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Estilos para la tarjeta */
+.card {
+  border: none;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-header {
+  border-radius: 0 !important;
+  padding: 20px;
+}
+
+.card-header h3 {
+  font-weight: 600;
+}
+
+.card-header p {
+  opacity: 0.9;
+  font-size: 0.9rem;
+}
+
+/* Estilos para los campos del formulario */
+.form-control:focus {
+  border-color: #667eea;
+  box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+}
+
+.form-label {
+  font-weight: 500;
+  color: #333;
+}
+
+.form-check-label {
+  cursor: pointer;
+}
+
+/* Botón */
+.btn-primary {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border: none;
+  font-weight: 600;
+  padding: 12px;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover:not(:disabled) {
+  transform: scale(1.02);
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+.btn-primary:active:not(:disabled) {
+  transform: scale(0.98);
+}
+
+.btn-primary:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* Tarifas informativas */
+.alert-info {
+  background-color: #f8f9fa;
+  border-color: #dee2e6;
+  color: #333;
+}
+
+.badge {
+  padding: 6px 12px;
+  margin: 0 3px;
+}
+
+/* Área de resultado */
+.card.border-success {
+  animation: slideDown 0.5s ease;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card.border-success .card-header {
+  background: linear-gradient(135deg, #28a745 0%, #20c997 100%) !important;
+}
+
+/* Área de error */
+.alert-danger {
+  animation: shake 0.5s ease;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-10px); }
+  75% { transform: translateX(10px); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px !important;
+  }
+  
+  .card-body {
+    padding: 20px !important;
+  }
+}
