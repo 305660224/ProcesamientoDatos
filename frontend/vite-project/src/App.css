@@ -1,11 +1,10 @@
-/* Estilos generales */
+
 body {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   min-height: 100vh;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Estilos para la tarjeta */
 .card {
   border: none;
   border-radius: 15px;
@@ -31,7 +30,6 @@ body {
   font-size: 0.9rem;
 }
 
-/* Estilos para los campos del formulario */
 .form-control:focus {
   border-color: #667eea;
   box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
@@ -46,7 +44,6 @@ body {
   cursor: pointer;
 }
 
-/* Botón */
 .btn-primary {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   border: none;
@@ -69,7 +66,6 @@ body {
   cursor: not-allowed;
 }
 
-/* Tarifas informativas */
 .alert-info {
   background-color: #f8f9fa;
   border-color: #dee2e6;
@@ -81,7 +77,6 @@ body {
   margin: 0 3px;
 }
 
-/* Área de resultado */
 .card.border-success {
   animation: slideDown 0.5s ease;
 }
@@ -101,7 +96,6 @@ body {
   background: linear-gradient(135deg, #28a745 0%, #20c997 100%) !important;
 }
 
-/* Área de error */
 .alert-danger {
   animation: shake 0.5s ease;
 }
@@ -112,7 +106,6 @@ body {
   75% { transform: translateX(10px); }
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   .container {
     padding: 10px !important;
